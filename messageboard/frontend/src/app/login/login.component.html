@@ -1,0 +1,13 @@
+<mat-card class="card">
+  <mat-card-title style="color: rgb(51, 51, 199)">
+    <h2>Login Form </h2>
+  </mat-card-title>
+      <mat-input-container style="width: 350px">
+          <input [(ngModel)]="loginData.email" style="width: 350px" type="email"  matInput placeholder="Email" >
+      </mat-input-container>
+      <mat-input-container style="width: 350px">
+          <input [(ngModel)]="loginData.password" style="width: 350px" type="password"  matInput placeholder="Password" >
+      </mat-input-container> 
+      <br>
+      <button mat-raised-button color="primary" (click)="login()">Login</button>
+</mat-card>

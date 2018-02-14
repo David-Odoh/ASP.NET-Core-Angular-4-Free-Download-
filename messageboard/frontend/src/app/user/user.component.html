@@ -1,0 +1,10 @@
+<mat-card class="card">
+  <mat-input-container style="width: 350px">
+    <input [(ngModel)]="model.firstName" style="width: 350px"  matInput placeholder="First Name" >
+</mat-input-container>
+<mat-input-container style="width: 350px">
+    <input [(ngModel)]="model.lastName" style="width: 350px"  matInput placeholder="Last Name" >
+</mat-input-container>
+<br>
+<button mat-raised-button color="primary" (click)="saveUser(model)">Update Profile</button> 
+</mat-card>
